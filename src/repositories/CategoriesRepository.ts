@@ -10,7 +10,6 @@ class CategoriesRepository {
 
     private categories: Category[]
 
-
     constructor() {
         this.categories = []
     }
@@ -22,9 +21,13 @@ class CategoriesRepository {
             name,
             description,
             created_at: new Date()
-        })
+        });
 
-        this.categories.push(category)
+        this.categories.push(category);
+    }
+
+    list(): Category[] {
+        return this.categories
     }
 }
 
