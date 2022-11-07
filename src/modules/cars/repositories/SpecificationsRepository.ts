@@ -4,8 +4,7 @@ import { ISpecificationsRepository, ICreateSpecificationDTO } from "./ISpecifica
 
 
 class SpecificationRepository implements ISpecificationsRepository {
-    private
-     specifications: Specification[];
+    private specifications: Specification[];
 
      constructor() {
         this.specifications = [];
